@@ -1,9 +1,20 @@
-const Home = () => {
+// app/page.tsx
+import React from 'react';
+import Hero from '../components/Hero';
+import Features from '../components/Features';
+import Testimonials from '../components/Testimonials';
+import Footer from '@/components/Footer';
+
+const HomePage: React.FC = () => {
   return (
-    <>
-      <h1 className="h1-bold">Welcone to the world of next.js</h1>
-      <h1 className="h1-bold font-space-grotesk">welcome to my world</h1>
-    </>
+    <div>
+      <Hero />
+      <Features />
+      <Testimonials />
+      <Footer/>
+      
+    </div>
   );
 };
-export default Home;
+
+export default HomePage;
